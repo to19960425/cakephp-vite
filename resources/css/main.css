@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムスタイルがあればここに追加 */
+.el_btn {
+    width: 100px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(127, 201, 127);
+    text-align: center;
+    border-radius: 30px;
+    user-select: none;
+}
+
+.el_btn:active {
+    background-color: rgb(94, 151, 94);
+    transform: translateY(2px);
+}

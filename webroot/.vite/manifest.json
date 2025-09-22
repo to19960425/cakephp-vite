@@ -1,0 +1,11 @@
+{
+  "resources/js/main.tsx": {
+    "file": "assets/main-7F5VnHC1.js",
+    "name": "main",
+    "src": "resources/js/main.tsx",
+    "isEntry": true,
+    "css": [
+      "assets/main-nTn2_Pla.css"
+    ]
+  }
+}
