@@ -73,9 +73,9 @@ class ViteScriptsHelper extends BaseViteScriptsHelper
     {
         if (is_string($options)) {
             $file = $this->resolveShorthand($options);
+            // 'files' のみ設定（'devEntries' は vendor 側で上書き警告の対象になるため付けない）
             return [
                 'files' => [$file],
-                'devEntries' => [$file],
             ];
         }
 
@@ -84,7 +84,6 @@ class ViteScriptsHelper extends BaseViteScriptsHelper
             $files = array_map(fn($n) => $this->resolveShorthand((string)$n), $options);
             return [
                 'files' => $files,
-                'devEntries' => $files,
             ];
         }
 
