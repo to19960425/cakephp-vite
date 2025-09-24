@@ -39,6 +39,7 @@ class AppView extends View
      */
     public function initialize(): void
     {
-        $this->loadHelper('ViteHelper.ViteScripts');
+        // Prefer our extended ViteScripts helper (shorthand entries like 'login_index')
+        $this->loadHelper('ViteScripts');
     }
 }
